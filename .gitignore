@@ -1,0 +1,9 @@
+# Raw data (PRIVATE - contains real usernames)
+data/raw/
+
+# Python
+__pycache__/
+.venv/
+
+# Processed data is PUBLIC (anonymized)
+# data/processed/ is NOT ignored - safe to publish!

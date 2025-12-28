@@ -45,14 +45,14 @@ def set_style():
     }
     plt.rcParams.update(rc_params)
 
-def save_plot(name: str, folder: str = "plots/descriptive_stats", formats=['pdf', 'png']):
+def save_plot(name: str, folder: str = "plots/descriptive_stats", formats=['pdf']):
     """
-    Saves the current figure to the specified folder in multiple formats.
+    Saves the current figure to the specified folder in PDF format.
     
     Args:
         name (str): Filename without extension (e.g., 'f1_score_comparison').
         folder (str): Target directory inside the project root or absolute path.
-        formats (list): List of formats to save (e.g., ['pdf', 'png']).
+        formats (list): List of formats to save (default: ['pdf']).
     """
     # Find project root (assuming we are in notebooks/ or ml/ or root)
     # Simple heuristic: look for 'data' or 'plots' in CWD or parent
